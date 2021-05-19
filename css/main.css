@@ -87,6 +87,141 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* General Styles */
+
+.content-wrapper {
+  width: 88.89%;
+}
+
+figure {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+/* ------------- Base Header - Footer Styles ------------- */
+
+header, 
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header #name {
+  width: 100%;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+header nav ul li {
+  width: 31.25%;
+}
+
+footer {
+  flex-direction: column;
+  text-align: center;
+}
+
+footer .social {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+}
+
+footer .social p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Hero Area */
+
+.hero-area {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.hero-area .content-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.hero-area h1 {
+  width: 75%;
+}
+
+/* Work */
+
+#work  {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+#work .content-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+#work .work-items {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+/* About */
+
+#about {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+#about .content-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+#about article {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+#about h2 {
+  width: 100%;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
