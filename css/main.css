@@ -115,7 +115,7 @@ footer {
 
 header .content-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
@@ -143,7 +143,8 @@ header nav ul {
 
 header nav ul li {
   width: 31.25%;
-  padding: 10px 0;
+  text-align: center;
+  vertical-align: middle;
 }
 
 footer {
@@ -339,9 +340,94 @@ footer .copyright {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+/*Tablet styles here*/
+
+/* General styles */
+
+.content-wrapper {
+  max-width: 640px;
 }
+
+/* Header and footer */
+
+header #name {
+  width: 50%;
+}
+
+header nav {
+  width: 50%;
+}
+
+header nav ul li {
+  width: 33.33%;
+}
+
+#about-link {
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+
+/* Hero-area */
+
+.hero-area .content-wrapper {
+  min-height: 500px;
+}
+
+.hero-area h1 {
+  width: 50%;
+}
+
+/* Work */
+
+#work .work-items {
+  justify-content: space-between;
+}
+
+#work article {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: column wrap;
+  flex-basis: 45%;
+}
+
+/* About 
+
+
+#about article {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+#about h2 {
+  width: 100%;
+  margin: 30px 0 10px 0;
+}
+
+#about p {
+  margin-top: 10px;
+}
+*/
+
+#about article {
+  max-height: 500px;
+  justify-content: flex-start;
+  flex-flow: column wrap;
+}
+
+#about figure,
+#about h2,
+#about p {
+  width: 50%;
+}
+
+
+
+
+@media only screen and (min-width: 1200px) {
+  /*Desktop styles here*/
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
