@@ -94,8 +94,6 @@ html {
 }
 
 body {
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 1.125em;
   text-align: center;
   color: #FFFFFF;
 }
@@ -118,6 +116,7 @@ ol {
 a {
   color: #FFFFFF;
   text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 img {
@@ -130,8 +129,26 @@ h2 {
 }
 
 h3 {
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 1.375em;
   font-weight: 700;
+}
+
+h4 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.125em; 
+  font-weight: 700;
+}
+
+h5 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: .875em; 
+  font-weight: 400;
+}
+
+p {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.125em;
 }
 
 address {
@@ -237,6 +254,7 @@ footer .copyright {
 }
 
 .hero-area h1 {
+  font-family: 'Josefin Sans', sans-serif;
   margin-top: 50px;
   margin-bottom: 0;
   font-size: 2.25em;
@@ -501,14 +519,35 @@ footer .social {
   max-width: 960px;
 }
 
+h2 {
+  font-size: 2.625em;
+}
+
+h3 {
+  font-size: 1.625em;
+}
+
+h4 {
+  font-size: 1.375em;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+p {
+  font-size: 1.375em;
+}
+
 /* Hero area */
 
 .hero-area .content-wrapper {
-  min-height: 800px;
+  min-height: 900px;
 }
 
 .hero-area h1 {
   width: 60%;
+  font-size: 5em;
 }
 
 /* Work */
