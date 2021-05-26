@@ -116,7 +116,6 @@ ol {
 a {
   color: #FFFFFF;
   text-decoration: none;
-  font-family: 'Josefin Sans', sans-serif;
 }
 
 img {
@@ -130,8 +129,8 @@ h2 {
 
 h3 {
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 1.375em;
-  font-weight: 700;
+  font-size: 1.25em;
+  font-weight: 400;
 }
 
 h4 {
@@ -158,7 +157,8 @@ address {
 /* ------------- Base Header - Footer Styles ------------- */
 
 header, 
-footer {
+footer,
+#mobile-menu {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -166,12 +166,18 @@ footer {
   background-color: #5B86A9;
 }
 
-header .content-wrapper {
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+header .content-wrapper,
+#mobile-menu .content-wrapper, {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-flow: row wrap;
-  margin: 0;
 }
 
 header #name {
@@ -180,7 +186,11 @@ header #name {
   text-align: left;
 }
 
-header nav {
+header h2:hover {
+  color: #E37957;
+}
+
+.menu {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -189,23 +199,41 @@ header nav {
   margin: 15px 0;
 }
 
-header nav ul {
+.menu ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
 }
 
-header nav ul li {
+.menu ul li {
   width: 31.25%;
   text-align: center;
   vertical-align: middle;
-  font-size: 1.375em;
+  font-size: 1.25em;
   background-color: #FFFFFF;
+  border-radius: 10px;
+  padding-top: 5px;
+}
+
+.menu a {
+  color: #5B86A9;
+}
+
+.menu li:hover {
+  background-color: #E37957;
   border-radius: 10px;
 }
 
-header nav a {
-  color: #5B86A9;
+.menu a:hover {
+  color: #FFFFFF;
+}
+
+header .menu {
+  display: none
+}
+
+header .content-wrapper {
+  margin: 0;
 }
 
 footer {
@@ -234,6 +262,16 @@ footer .copyright {
   margin-bottom: 20px;
 }
 
+#mobile-menu {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+#mobile-menu .content-wrapper {
+  margin: 0;
+}
+
 /* Hero Area */
 
 .hero-area {
@@ -242,7 +280,7 @@ footer .copyright {
   flex-flow: row wrap;
   background: url(../img/header-hoop-desk.png) center no-repeat;
   background-size: cover;
-  min-height: 600px;
+  min-height: 750px;
 }
 
 .hero-area .content-wrapper {
@@ -255,9 +293,9 @@ footer .copyright {
 
 .hero-area h1 {
   font-family: 'Josefin Sans', sans-serif;
-  margin-top: 50px;
+  margin-top: 150px;
   margin-bottom: 0;
-  font-size: 2.25em;
+  font-size: 2.625em;
   font-weight: 400;
   color: #5B86A9;
   text-align: left;
@@ -316,7 +354,7 @@ footer .copyright {
 }
 
 #about p {
-  margin-top: 10px;
+  margin-top: 15px;
   color: #5B86A9;
 }
 
@@ -419,27 +457,44 @@ footer .copyright {
 
 /* Header and footer */
 
-header #name {
+header .content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header #name{
   width: 50%;
 }
 
-header nav {
+#mobile-menu .menu {
+  display: none
+}
+
+header .menu {
+  display: flex;
   width: 50%;
 }
 
-header nav ul li {
+header .menu ul li {
   width: 33.33%;
   background-color: #5B86A9;
+  border-radius: 0;
+}
+
+header .menu a {
+  color: #FFFFFF;
+}
+
+header .menu li:hover {
+  background-color: #E37957;
   border-radius: 0;
 }
 
 header #about-link {
   border-left: 1px solid white;
   border-right: 1px solid white;
-}
-
-header nav a {
-  color: #FFFFFF;
 }
 
 footer .content-wrapper {
@@ -471,7 +526,7 @@ footer .social {
 .hero-area .content-wrapper {
   background: url(../img/header-hoop-desk.png) center no-repeat;
   background-size: cover;
-  min-height: 650px;
+  min-height: 800px;
 }
 
 .hero-area h1 {
@@ -524,7 +579,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.625em;
+  font-size: 1.5em;
 }
 
 h4 {
@@ -542,7 +597,7 @@ p {
 /* Hero area */
 
 .hero-area .content-wrapper {
-  min-height: 900px;
+  min-height: 1050px;
 }
 
 .hero-area h1 {
