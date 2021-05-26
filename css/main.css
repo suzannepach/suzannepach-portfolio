@@ -89,9 +89,15 @@ textarea {
 
 /* General Styles */
 
-* {
-  margin: 0;
-  padding: 0;
+html {
+  font-size: 1em;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.125em;
+  text-align: center;
+  color: #FFFFFF;
 }
 
 .content-wrapper {
@@ -99,8 +105,37 @@ textarea {
   margin: 100px 0;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul, 
+ol {
+    list-style-type: none;
+}
+
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
 img {
   width: 100%;
+}
+
+h2 {
+  font-family: 'Yeseva One', cursive;
+  font-size: 1.875em;
+}
+
+h3 {
+  font-size: 1.375em;
+  font-weight: 700;
+}
+
+address {
+  font-style: normal;
 }
 
 /* ------------- Base Header - Footer Styles ------------- */
@@ -111,6 +146,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #5B86A9;
 }
 
 header .content-wrapper {
@@ -124,6 +160,7 @@ header .content-wrapper {
 header #name {
   width: 100%;
   margin: 15px 0;
+  text-align: left;
 }
 
 header nav {
@@ -145,6 +182,13 @@ header nav ul li {
   width: 31.25%;
   text-align: center;
   vertical-align: middle;
+  font-size: 1.375em;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+}
+
+header nav a {
+  color: #5B86A9;
 }
 
 footer {
@@ -179,6 +223,9 @@ footer .copyright {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url(../img/header-hoop-desk.png) center no-repeat;
+  background-size: cover;
+  min-height: 366px;
 }
 
 .hero-area .content-wrapper {
@@ -187,12 +234,22 @@ footer .copyright {
   align-items: flex-start;
   flex-flow: row wrap;
   margin: 0;
-  min-height: 350px;
+  min-height: 500px;
 }
 
 .hero-area h1 {
-  width: 75%;
+  width: 100%;
   margin-top: 50px;
+  font-size: 2.25em;
+  font-weight: 400;
+  color: #5B86A9;
+  text-align: left;
+}
+
+.hero-area h1 span {
+  font-family: 'Yeseva One', cursive;
+  font-weight: 700;
+  color: #E37957;
 }
 
 /* Work */
@@ -201,6 +258,7 @@ footer .copyright {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-color: #5B86A9;
 }
 
 #work .content-wrapper {
@@ -233,10 +291,16 @@ footer .copyright {
 
 #about h2 {
   margin: 30px 0 10px 0;
+  color: #5B86A9;
+}
+
+#about h2 span {
+  color: #E37957;
 }
 
 #about p {
   margin-top: 10px;
+  color: #5B86A9;
 }
 
 /* ==========================================================================
