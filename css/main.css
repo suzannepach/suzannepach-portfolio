@@ -366,6 +366,11 @@ footer .footer-content {
   flex-direction: row;
 }
 
+footer .contact,
+footer .social {
+  width: 45%;
+}
+
 footer .social {
   justify-content: space-between;
 }
@@ -412,7 +417,25 @@ footer .social {
 }
 
 @media only screen and (min-width: 1200px) {
-  /*Desktop styles here*/
+/*Desktop styles here*/
+
+/* General styles */
+
+.content-wrapper {
+  max-width: 960px;
+}
+
+/* Hero area */
+.hero-area h1 {
+  width: 60%;
+}
+
+/* Work */
+
+#work article {
+  flex-basis: 42%;
+}
+
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
