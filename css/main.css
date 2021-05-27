@@ -150,10 +150,6 @@ p {
   font-size: 1.125em;
 }
 
-address {
-  font-style: normal;
-}
-
 /* ------------- Base Header - Footer Styles ------------- */
 
 header, 
@@ -237,29 +233,52 @@ header .content-wrapper {
 }
 
 footer {
-  flex-direction: column;
+  display: flex;
+  justify-content: center;
   text-align: center;
+  flex-flow: row wrap;
 }
 
 footer .content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  flex-direction: column;
+  margin: 0;
+}
+
+footer .contact-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   margin: 50px 0;
 }
 
-footer .social {
+footer .contact-links {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  width: 50%;
+  flex-direction: row;
+  width: 86%;
 }
 
-footer .social p {
+footer .contact-links i {
+  font-size: 3.5em;
+}
+
+footer .contact-links i:hover {
+  color: #E37957;
+}
+
+footer .contact-links p {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 footer .copyright {
-  margin-bottom: 20px;
+  margin-bottom: 85px;
 }
 
 #mobile-menu {
@@ -452,7 +471,7 @@ footer .copyright {
 /* General styles */
 
 .content-wrapper {
-  max-width: 640px;
+  width: 83.33%;
 }
 
 /* Header and footer */
@@ -497,24 +516,12 @@ header #about-link {
   border-right: 1px solid white;
 }
 
-footer .content-wrapper {
-  margin: 50px 0;
+footer .contact-links {
+  width: 50%;
 }
 
-footer .footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-}
-
-footer .contact,
-footer .social {
-  width: 45%;
-}
-
-footer .social {
-  justify-content: space-between;
+footer .copyright {
+  margin-bottom: 15px;
 }
 
 /* Hero-area */
@@ -571,7 +578,8 @@ footer .social {
 /* General styles */
 
 .content-wrapper {
-  max-width: 960px;
+  width: 80%;
+  max-width: 1468px;
 }
 
 h2 {
@@ -592,6 +600,12 @@ h5 {
 
 p {
   font-size: 1.375em;
+}
+
+/* header and footer */
+
+footer .contact-links {
+  width: 33.33%;
 }
 
 /* Hero area */
